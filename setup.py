@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name="sitejabber-utils",
-	version="1.0.0",
+	version="1.0.1",
 	author="Sitejabber",
 	author_email="support@sitejabber.com",
 	license='MIT',
