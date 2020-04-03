@@ -34,7 +34,7 @@ userData = {
 	"last_name":	"Doe"
 }
 
-encryptedData = utils.encrypt(dumps(userData), 'lkjashdlanhsdjasd092390239023902')
+encryptedData = utils.encrypt(dumps(userData), API_SECRET)
 feedbackLink = "https://www.sitejabber.com/biz-review?key=API_KEY&payload=" + quote_plus(encryptedData);
 print(feedbackLink)
 
