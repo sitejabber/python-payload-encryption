@@ -12,7 +12,7 @@ pip install sitejabber-utils
 
 # Usage
 
-- Get your API keys on https://biz.sitejabber.com/account
+- Get your credentials on https://biz.sitejabber.com/account
 - JSON encode your user data
 - Call the encrypt method
 - URL-encode the result
@@ -34,8 +34,8 @@ userData = {
 	"last_name":	"Doe"
 }
 
-encryptedData = utils.encrypt(dumps(userData), API_SECRET)
-feedbackLink = "https://www.sitejabber.com/biz-review?key=API_KEY&payload=" + quote_plus(encryptedData);
+encryptedData = utils.encrypt(dumps(userData), CLIENT_ENCRYPTION_KEY)
+feedbackLink = "https://www.sitejabber.com/biz-review?key=CLIENT_ID&payload=" + quote_plus(encryptedData);
 print(feedbackLink)
 
 ```
